@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Описание страницы -->
+    <meta name="description" content="Welcome to my portfolio website. I am a front-end web developer specializing in creating user-friendly, responsive, and accessible websites. Explore my projects, open-source work, and contact me for any inquiries or collaborations." />
+
+    <!-- Open Graph для социальных сетей -->
+    <meta property="og:url" content="https://ossportfolio.netlify.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nazym Portfolio - Front-End Developer" />
+    <meta property="og:description" content="Welcome to my portfolio website. I am a front-end web developer specializing in creating user-friendly, responsive, and accessible websites. Explore my projects, open-source work, and contact me for any inquiries or collaborations." />
+    <meta property="og:image" content="assets/images/sharing-card.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets\images\work\Nazym.png" type="image/x-icon" />
+    <link rel="icon" href="assets\images\work\Nazym.png" type="image/png" />
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="assets\images\work\Nazym.png">
+
+    <!-- Шрифт Mona-Sans -->
+    <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Nazym's Portfolio - Front-End Developer</title>
+</head>
+
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">Mini Blog</a></li>
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>Hi, I'm Nazym</span>
+            <span>Biginer Frontend Web Developer</span>
+          </h1>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+            I focus on design, convenience, and technology to make each project unique and functional.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Hire me</a>
+            <a href="#work" class="btn btn-secondary">See my Mini Blog</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="client">
+      <div class="container">
+          <h2 class="h2">Liked</h2>
+          <div class="logos">
+              <!-- Первая строка логотипов -->
+              <div class="logo-group">
+                  <img
+                      loading="lazy"
+                      src="assets\images\trusted-by\cheas.png"
+                      alt="cheas"
+                      class="logo hide to-top"
+                  />
+                  
+                  <img
+                      loading="lazy"
+                      src="assets/images/trusted-by/coke.svg"
+                      alt="Theia"
+                      class="logo hide to-bottom"
+                  />
+              </div>
+
+              <!-- Вторая строка логотипов -->
+              <div class="logo-group">
+                  <img
+                      loading="lazy"
+                      src="assets\images\trusted-by\tt.png"
+                      alt="tt"
+                      class="logo hide to-top"
+                  />
+                  
+                  <img
+                      loading="lazy"
+                      src="assets/images/trusted-by/gitlab.svg"
+                      alt="Ron Jones"
+                      class="logo"
+                  />
+              </div>
+
+              <!-- Третья строка логотипов -->
+              <div class="logo-group">
+                  <img
+                      loading="lazy"
+                      src="assets\images\trusted-by\spotify.webp"
+                      alt="spotify"
+                      class="logo hide to-top"
+                  />
+                  
+                  <img
+                      loading="lazy"
+                      src="assets/images/trusted-by/duolingo.svg"
+                      alt="Mighty furniture's"
+                      class="logo hide to-bottom"
+                  />
+              </div>
+
+              <!-- Четвертая строка логотипов -->
+              <div class="logo-group">
+                  <img
+                      loading="lazy"
+                      src="assets\images\social-links\Instagram_icon.png.webp"
+                      alt="Instagram"
+                      class="logo hide to-top"
+                  />
+                  
+                  <img
+                      loading="lazy"
+                      src="assets\images\social-links\github.svg"
+                      alt="github"
+                      class="logo hide to-bottom"
+                  />
+              </div>
+          </div>
+      </div>
+  </section>
+    
+
+    <section class="work"> 
+      <div class="container">
+          <h2 class="h2" id="work">Mini Blog</h2>
+          <div class="work-boxes">
+              <!-- About Me -->
+              <div class="work-box">
+                  <div class="work-textbox">
+                      <h3 class="h3">About Me</h3>
+                      <p class="work-text">
+                        My name is Nazym. I create modern and user-friendly web applications with a focus on user experience and performance.
+                      <ol class="work-technologies">
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JavaScript</li>
+                      </ol> 
+                  </div>
+                  <picture class="work-img">
+                      <img loading="lazy" src="assets/images/work/Nazym.png" alt="Dog and Cat" />
+                  </picture>
+              </div>
+    
+              <!-- Dog -->
+              <div class="work-box">
+                  <div class="work-textbox">
+                      <h3 class="h3">Dog</h3>
+                      <p class="work-text">I liked Dog</p>
+                      <ol class="work-technologies">
+                          <li>Dogs are one of the first animals domesticated by humans. They are social and intelligent creatures who have been faithful companions of humans for thousands of years.</li>
+                          
+                      </ol>
+                      
+                  </div>
+                  <picture class="work-img">
+                      <img loading="lazy" src="assets/images/work/dog.png" alt="Dog and Cat" />
+                  </picture>
+              </div>
+    
+              <!-- Cat -->
+              <div class="work-box">
+                  <div class="work-textbox">
+                      <h3 class="h3">Cat</h3>
+                      <p class="work-text">
+                          cat
+                      </p>
+                      <ol class="work-technologies">
+                          <li>Cats are domesticated predatory mammals that have become not only popular pets, but also an object of cultural admiration.</li>
+                          
+                      </ol>
+                     
+                  </div>
+                  <picture class="work-img">
+                      <img loading="lazy" src="assets/images/work/cat.jpg" alt="Dog and Cat" />
+                  </picture>
+              </div>
+          </div>
+      </div>
+    </section>
+    
+
+      
+
+      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">My Skill</h2>
+          <div class="skills-imgs">
+                <img src="assets\images\skills\html5.png" alt="html" class="skills-img" loading="lazy" title="html">
+                 <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+                 <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+                 <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <!-- Please comment this component if you're not available for hire -->
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available for hire
+              </strong>
+              <p class="contact-text">
+                I am a software engineer specializing in the development of user-friendly and high-performance 
+                web interfaces. In my work, I strive for a balance between 
+                functionality and aesthetics, paying special attention to modern accessibility standards.
+              </p>
+              <p class="contact-text">
+                aaaaaaaa
+              </p>
+              <!-- Replace src with your signatures and name -->
+              <img
+                src="assets\images\almaty.jpeg"
+                alt="Syed Mohsin"
+                class="signatures"
+                loading="lazy"
+              />
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">Can I talk </label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Instagram" href="https://www.instagram.com/nazymjarylhassyn/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets\images\social-links\Instagram_icon.png.webp"
+                    alt="Instagram"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="wa" href="https://wa.me/+77074017713" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets\images\social-links\WhatsApp_icon.png"
+                    alt="wa"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - Template designed & developed by <a target="_blank" rel="noopener" >Nazym.</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
